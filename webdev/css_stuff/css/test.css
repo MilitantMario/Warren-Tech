@@ -1,0 +1,33 @@
+/* CSS Document */
+/* "zero out any previous CSS settings */
+input[type="text"]
+{
+	display:block;
+	margin: 0;
+	width: 100%;
+	font-family: sans-serif;
+	font-size: 1em;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+}
+
+input[type="text"]:focus
+{	
+	outline: none;	
+}
+
+/* Glow style */
+.style-1 input[type="text"]
+{
+	padding: 10px;
+	border: solid 1px #dcdcdc;
+	transition: box-shadow 0.3s, border 0.3s;
+}
+
+.style-1 input[type="text"]:focus,
+.style-1 input[type="text"].focus
+{
+	border: solid 1px #707070;
+	box-shadow: 0 0 5px 1px #969696;
+}
